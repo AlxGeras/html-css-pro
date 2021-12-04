@@ -12,6 +12,14 @@ button, input{
  font-family: inherit;
 }
 
+.hidden{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: -999999px;
+    margin: -1px;
+}
+
 .wrap{
     max-width: 1140px;
     margin: 0 auto;
@@ -33,15 +41,20 @@ button, input{
 }
 
 .main-link{
-    padding-right: 41px;
+    margin-right: 41px;
 }
 
-.contact-link{
-    padding-left: 33px;
+.search-button, .menu-button{
+    background-color: transparent;
+    border: none;
+}
+
+.registration-link{
+    margin-left: 32px;
+    margin-right: 32px;
 }
 
 .basket-link{
-    padding-left: 33px;
     padding-right: 10px;
     position: relative;
 
@@ -106,36 +119,53 @@ button, input{
 }
 
 .categories{
-    margin-top: 65px;
+    padding-top: 65px;
+    padding-bottom: 96px;
 }
 
-.categories-top{
+.categories-list{
     display: flex;
-    justify-content: space-between;
+    list-style-type: none;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.category-link:first-child{
-    padding-right: 30px;
+.category-link{
+    text-decoration: none;
 }
 
-.category-link:last-child{
-    padding-left: 30px;
-}
 
 .category{
-    position: relative;
-}
-.category-img{
-    width: 100%;
+ background-color: #C4C4C4;
+ width: 360px;
+ height: 260px;
+ position: relative;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
+.category-list-item:nth-child(1) .category {
+    background-image: url(../img/for_women.png);
+}
+
+.category-list-item:nth-child(2) .category{
+    background-image: url(../img/for_men.png);
+}
+
+.category-list-item:nth-child(3) .category{
+    background-image: url(../img/for_kids.png);
+}
+
+.category-list-item:nth-child(4) .category, .category-list-item:nth-child(4) {
+    background-image: url(../img/ACCESORIES.png);
+    width: 100%;
+    height: 180px;
+
+}
 
 .category-title{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
     text-align: center;
 }
 
@@ -155,15 +185,40 @@ button, input{
     color: #F16D7F;
 }
 
-.categories-bottom{
-    padding-top: 30px;
-    padding-bottom: 96px;
-}
+
+
+
+
+
 
 .products{
     display: flex;
     flex-direction: column;
 }
+
+.products-list{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+
+.product-card{
+    max-width: 360px;
+    background-color: #F8F8F8;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .products-top-title{
@@ -182,33 +237,11 @@ button, input{
     color: #9F9F9F;
 }
 
-.products-line-top, .products-line-bottom{
-    display: flex;
-    justify-content: space-between;
-}
-
-.products-line-bottom{
-    padding-top: 30px;
-}
-
 
 .product-card-link{
     text-decoration: none;
 }
 
-.product-card{
-    max-width: 360px;
-    background-color: #F8F8F8;
-
-}
-
-.product-card-link:first-child{
-    padding-right: 30px;
-}
-
-.product-card-link:last-child{
-    padding-left: 30px;
-}
 
 .product-img{
     width: 100%;
@@ -243,13 +276,20 @@ button, input{
 }
 
 .products-view-all-link{
+    text-decoration: none;
     align-self: center;
     margin-top: 48px;
     text-decoration: none;
     border: 1px solid #FF6A6A;
     padding: 15px 39px;
     margin-bottom: 98px;
+    color: #F26376;
 }
+
+
+
+
+
 
 
 
@@ -269,8 +309,23 @@ button, input{
     max-width: 360px;
 }
 
-.feature-img-wrap{
-    height: 64px;
+.feature-bg-wrap{
+    height: 88px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.feature-bg-delivery{
+    background-image: url(../img/feature_1.svg);
+}
+
+.feature-bg-sales{
+    background-image: url(../img/feature_2.svg);
+}
+
+.feature-bg-quality{
+    background-image: url(../img/feature_3.svg);
 }
 
 .feature-title{
@@ -290,7 +345,7 @@ button, input{
 .main-footer{
     background-image: url(../img/main-footer-background.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .main-footer-wrap{
@@ -306,8 +361,10 @@ button, input{
 }
 
 .quote-photo{
-    display: block;
-    margin: 0 auto;
+    background-image: url(../img/quote_photo.png);
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -326,7 +383,7 @@ button, input{
 
 .main-footer-feedback{
     text-align: center;
-    padding-top: 96px;
+    padding-top: 150px;
     margin-right: 98px;
 
 }
