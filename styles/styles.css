@@ -264,17 +264,15 @@ button, input{
 
 
 .product-video-content{
-    margin-top: -110px;
-     height: 740px;
-     width: 420px;
+     height: 420px;
+     width: 360px;
     }
     
 .product-video-wrap{
 
     overflow:hidden;
     display:block;
-    height: 420px;
-    width: 360px;
+
 
 }
 
