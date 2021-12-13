@@ -1,0 +1,134 @@
+@mixin silder__arrow_mix {
+    height: 47px;
+    width: 47px;
+    color: #000;
+    background-color: rgba(42, 42, 42, 0.15);
+    border: none;
+    &:active{
+        color: $main-color;
+    }
+}
+
+.slider {
+
+    &__slideshow{
+        height: 777px;
+        display: flex;
+        align-items: center;
+        background-color: #F7F7F7;
+        justify-content: space-between;
+    }
+
+    &__left-arrow {
+        @include silder__arrow_mix;
+    }
+
+    &__img {
+        height: 90%;
+    }
+
+
+    &__right-arrow {
+        @include silder__arrow_mix;
+    }
+
+    &__descrtipion{
+        padding-top: 1px;
+        height: 600px;
+        text-align: center;
+        width: 1140px;
+        background-color: #fff;
+        border: 1px solid #EAEAEA;
+        &_wrap{
+            margin: -64px auto 0 auto;
+        
+        }
+    }
+
+    &__main-title{
+        margin-top: 64px;
+        margin-bottom: 27px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: $main-color;
+        position: relative;
+        &:after{
+            position: absolute;
+            content: '';
+            width: 63px;
+            height: 3px;
+            background-color: #EF5B70;
+            left: 50%;
+            bottom: 0;
+            margin-bottom: -12px;
+            transform: translateX(-50%);
+        }
+
+    }
+
+    &__subtitle{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        margin-bottom: 48px;
+    }
+
+    &__text{
+        margin-bottom: 32px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5E5E5E;
+        width: 555px;
+        margin: 0 auto 32px auto;
+    }
+
+    &__price{
+        font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    margin-bottom: 64px;
+    }
+
+    &__hr{
+        width: 642px;
+        margin: 0 auto;
+        border: none;
+        line-height: 1px;
+        height: 1px;
+        background-color: #EAEAEA;
+        margin-bottom: 64px;
+        
+    }
+
+    &__btn{
+        margin: 0 auto;
+       display: flex;
+       align-items: center;
+        border: 1px solid #FF6A6A;
+        padding: 15px 57px 15px 24px;
+        margin-bottom: 98px;
+        color: #F26376;
+        background-color: transparent;
+        fill: #F26376;
+        font-size: 16px;
+        line-height: 19px;
+        &:active{
+            color: #FFFFFF;
+            background-color: $main-color;
+            fill: #FFFFFF;
+        }
+    }
+
+    &__svg{
+        margin-right: 23px;
+    }
+
+    &_wrap{
+        margin-bottom: 128px;
+    }
+
+}
