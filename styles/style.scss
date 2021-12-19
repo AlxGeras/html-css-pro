@@ -29,7 +29,6 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
 }
 
 button, input{
@@ -50,8 +49,6 @@ button, input{
 }
 
 @import '_main-header.scss';
-
-
 
 .offer{
     background-color: #F1E4E6;
@@ -93,8 +90,6 @@ button, input{
     color: $main-color;
 }
 
-
-
 @import "index/_product-section";
 
 @import "index/_category-section";
@@ -102,8 +97,6 @@ button, input{
 @import "index/_feature-section";
 
 @import "_main-footer";
-
-
 
 
 /*START CATALOG PAGE*/
@@ -176,12 +169,10 @@ button, input{
     padding-top: 33px;
     padding-bottom: 50px;
     justify-content: space-between;
-
 }
 
 .products-choice-menu-wrap{
     width: $product_card_width;
-
 }
 
 .product-catalog_wrap{
@@ -191,11 +182,6 @@ button, input{
 @import "catalog/_filter.scss";
 
 @import "catalog/_param-block.scss";
-
-
-
-
-
 
 .catalog-pagination-list{
     display: flex;
@@ -231,11 +217,20 @@ button, input{
 
 /*END CATALOG PAGE*/
 
-
 /*START PRODUCT PAGE*/
 
 @import "product/_slider.scss";
 
+/*END PRODUCT PAGE*/
+
+/*START REGISTRAION PAGE*/
+
 @import "_registration.scss";
 
-/*END PRODUCT PAGE*/
+/*END REGISTRAION PAGE*/
+
+/*START SHOPPING CART PAGE*/
+
+@import "shopping-cart/_shopping-cart";
+
+/*END SHOPPING CART PAGE*/

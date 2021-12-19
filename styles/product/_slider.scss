@@ -9,14 +9,11 @@
         color: $main-color;
         background-color: rgba(42, 42, 42, 0.2);
         cursor: pointer;
-
     }
 }
 
-.slider {
-    
+.slider {  
     flex-grow: 1;
-
     &__slideshow{
         height: 777px;
         display: flex;
@@ -24,20 +21,15 @@
         background-color: #F7F7F7;
         justify-content: space-between;
     }
-
     &__left-arrow {
         @include silder__arrow_mix;
     }
-
     &__img {
         height: 90%;
     }
-
-
     &__right-arrow {
         @include silder__arrow_mix;
     }
-
     &__descrtipion{
         padding-top: 1px;
         min-height: 600px;
@@ -52,7 +44,6 @@
         
         }
     }
-
     &__main-title{
         margin-top: 64px;
         margin-bottom: 27px;
@@ -72,9 +63,7 @@
             margin-bottom: -12px;
             transform: translateX(-50%);
         }
-
     }
-
     &__subtitle{
         font-weight: 300;
         font-size: 18px;
@@ -82,7 +71,6 @@
         color: #4D4D4D;
         margin-bottom: 48px;
     }
-
     &__text{
         margin-bottom: 32px;
         font-weight: 300;
@@ -92,7 +80,6 @@
         width: 555px;
         margin: 0 auto 32px auto;
     }
-
     &__price{
         font-weight: 300;
     font-size: 24px;
@@ -100,7 +87,6 @@
     color: #EF5B70;
     margin-bottom: 64px;
     }
-
     &__hr{
         width: 642px;
         margin: 0 auto;
@@ -110,10 +96,7 @@
         height: 1px;
         background-color: #EAEAEA;
         margin-bottom: 64px;
-
-        
     }
-
     &__btn{
         margin: 0 auto;
        display: flex;
@@ -134,13 +117,10 @@
             fill: #FFFFFF;
         }
     }
-
     &__svg{
         margin-right: 23px;
     }
-
     &_wrap{
         margin-bottom: 128px;
     }
-
 }

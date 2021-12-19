@@ -11,7 +11,7 @@
         rel="stylesheet">
         <script src="https://kit.fontawesome.com/b6eb78a978.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <title>Registration</title>
+    <title>Shopping Cart</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                         </svg>
                     </button>
                     <nav class="header-sidebar-menu">
-                                    <button class="header-sidebar-menu__close-btn">
+                        <button class="header-sidebar-menu__close-btn">
                             <i class="header-sidebar-menu__close-btn-fa fas fa-times"></i>
                         </button>
                         <p class="header-sidebar-menu__menu-name">
@@ -158,56 +158,125 @@
 
     <section class="nav-info-block">
         <div class="wrap nav-info-block-wrap">
-            <h1 class="nav-info-block-title">REGISTRATION</h1>
+            <h1 class="nav-info-block-title">SHOPPING CART</h1>
         </div>
     </section>
 
-    <section class="reg-feedback wrap reg-feedback_wrap">
-        <form class="reg-feedback__form">
-            <label class="reg-feedback__label">Your Name</label>
-            <input type="text" class="reg-feedback__input" placeholder="First Name" required>
-            <input type="text" class="reg-feedback__input" placeholder="Last Name" required>
-            <div class="reg-feedback__radio-box">
-                <label for="reg-feedback__radio-male" class="reg-feedback__radio-label">
-                    <input type="radio" class="reg-feedback__radio" id= 'reg-feedback__radio-male' name = "reg-feedback__radio-box" required>
-                    Male
-                </label> 
-                <label for="reg-feedback__radio-female" class="reg-feedback__radio-label" >
-                    <input type="radio" class="reg-feedback__radio" id= 'reg-feedback__radio-female' name = "reg-feedback__radio-box" required>
-                    Female
-                </label> 
+   <section class="shopping-cart wrap shopping-cart_wrap">
+        <div class="shopping-items">
+            <ul class="shopping-items__list">
+                <li class="shopping-items__item">
+                    <div class="shopping-item__item-box">
+                        <img src="img/product_card_3.png" alt="product_card_3" class="shopping-item__img">
+                        <div class="shopping-item__item-info">
+                            <h2 class="shopping-item__name">
+                                MANGO  PEOPLE <br> T-SHIRT
+                            </h2>
+                            <p class="shopping-item__key">
+                                Price: 
+                                <span class="shopping-item__price-value">
+                                    $300
+                                </span>
+                            </p>
+                            <p class="shopping-item__key">
+                                Color: 
+                                <span class="shopping-item__value">
+                                    Red
+                                </span>
+                            </p>
+                            <p class="shopping-item__key">
+                                Size: 
+                                <span class="shopping-item__value">
+                                    XI
+                                </span>
+                            </p>
+                            <p class="shopping-item__key">
+                                Quantity: 
+                                <span class="shopping-item__quantity-value">
+                                    2
+                                </span>
+                            </p>
+                        </div>
+                        
+                        <button class="shopping-item__close-btn">
+                            <i class="shopping-item__close-btn-fa fas fa-times"></i>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="shopping-items__item">
+                    <div class="shopping-item__item-box">
+                        <img src="img/catalog_card_2.png" alt="pcatalog_card_2" class="shopping-item__img">
+                        <div class="shopping-item__item-info">
+                            <h2 class="shopping-item__name">
+                                MANGO  PEOPLE <br> T-SHIRT
+                            </h2>
+                            <p class="shopping-item__key">
+                                Price: 
+                                <span class="shopping-item__price-value">
+                                    $300
+                                </span>
+                            </p>
+                            <p class="shopping-item__key">
+                                Color: 
+                                <span class="shopping-item__value">
+                                    Red
+                                </span>
+                            </p>
+                            <p class="shopping-item__key">
+                                Size: 
+                                <span class="shopping-item__value">
+                                    XI
+                                </span>
+                            </p>
+                            <p class="shopping-item__key">
+                                Quantity: 
+                                <span class="shopping-item__quantity-value">
+                                    2
+                                </span>
+                            </p>
+                        </div>
+                        
+                        <button class="shopping-item__close-btn">
+                            <i class="shopping-item__close-btn-fa fas fa-times"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <div class="shopping-items__btn-box">
+                <button class="shopping-items__btn">CLEAR SHOPPING CART</button>
+                <button class="shopping-items__btn">CONTINUE SHOPPING</button>
+
             </div>
-            <label class="reg-feedback__label">Login Details</label>
-            <input type="email" class="reg-feedback__input" placeholder="Email" required>
-            <input type="password" class="reg-feedback__input" placeholder="Password" required>
-            <p class="reg-feedback__text">
-                Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
-            </p>
-
-            <button type="submit" class="reg-feedback__submit">
-                JOIN NOW
-                <i class="reg-feedback__submit-fa fas fa-arrow-right"></i>
-            </button>
-        </form>
-
-        <div class="loyality">
-            <h2 class="loyality__title">
-                LOYALTY HAS ITS PERKS
-            </h2>
-            <p class="loyality__text">
-                Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
-            </p>
-            <ul class="loyality__list">
-                <li class="loyality__item">15% off welcome offer</li>
-                <li class="loyality__item">Free shipping, returns and exchanges on all orders</li>
-                <li class="loyality__item">$10 off a purchase on your birthday</li>
-                <li class="loyality__item">Early access to products</li>
-                <li class="loyality__item">Exclusive offers & rewards</li>
-            </ul>    
+           
         </div>
+       <div class="shopping-check">
+            <form action="#" class="shopping-check__form">
+                <label class="shopping-check__title">SHIPPING ADRESS</label>
+                <input type="text" class="shopping-check__input" placeholder="Bangladesh" required>
+                <input type="text" class="shopping-check__input" placeholder="State" required>
+                <input type="text" class="shopping-check__input" placeholder="Postcode / Zip" required>
+            </form>
+            <button class="shopping-check__quote-btn">GET A QUOTE</button>
+            <div class="shopping-check__total">
+                <p class="shopping-check__subtotal">
+                    SUB TOTAL
+                    <span class="shopping-check__subtotal-value">
+                        $900
+                    </span>
+                </p>
+                <p class="shopping-check__grandtotal">
+                    GRAND TOTAL
+                    <span class="shopping-check__grandtotal-value">
+                        $900
+                    </span>
+                </p>
+                <hr class="shopping-check__hr">
+                <button type="submit" class="shopping-check__btn">PROCEED TO CHECKOUT</button>
+            </div>
+       </div>
+   </section>
 
-
-    </section>
     <footer class="main-footer">
         <div class="wrap main-footer-wrap">
             <blockquote class="quote-block">

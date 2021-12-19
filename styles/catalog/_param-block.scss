@@ -16,7 +16,6 @@
     margin-left: 10px;
 }
 
-
 .param-block-inner-list{
     list-style: none;
     display: flex;
@@ -46,11 +45,9 @@
     &:hover .param-block__menu{
         transform: scale(1);
     }
-
     &:hover .param-block__btn{
         color: $main-color;
     }
-
 }
 
 .param-block__menu{
