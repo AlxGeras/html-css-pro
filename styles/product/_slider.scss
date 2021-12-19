@@ -4,12 +4,18 @@
     color: #000;
     background-color: rgba(42, 42, 42, 0.15);
     border: none;
-    &:active{
+    transition: 0.3s;
+    &:hover{
         color: $main-color;
+        background-color: rgba(42, 42, 42, 0.2);
+        cursor: pointer;
+
     }
 }
 
 .slider {
+    
+    flex-grow: 1;
 
     &__slideshow{
         height: 777px;
@@ -34,11 +40,13 @@
 
     &__descrtipion{
         padding-top: 1px;
-        height: 600px;
+        min-height: 600px;
         text-align: center;
         width: 1140px;
         background-color: #fff;
         border: 1px solid #EAEAEA;
+        display: flex;
+        flex-direction: column;
         &_wrap{
             margin: -64px auto 0 auto;
         
@@ -96,11 +104,13 @@
     &__hr{
         width: 642px;
         margin: 0 auto;
-        border: none;
+        border-width: 1px;
+        border-style: unset;
         line-height: 1px;
         height: 1px;
         background-color: #EAEAEA;
         margin-bottom: 64px;
+
         
     }
 
@@ -110,13 +120,15 @@
        align-items: center;
         border: 1px solid #FF6A6A;
         padding: 15px 57px 15px 24px;
-        margin-bottom: 98px;
+        margin-bottom: 64px;
         color: #F26376;
         background-color: transparent;
         fill: #F26376;
         font-size: 16px;
         line-height: 19px;
-        &:active{
+        transition-duration: 0.4s;
+        cursor: pointer;
+        &:hover{
             color: #FFFFFF;
             background-color: $main-color;
             fill: #FFFFFF;
