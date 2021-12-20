@@ -1,0 +1,321 @@
+.shopping-cart{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 128px;
+    &_wrap{
+        margin-top: 96px;
+        margin-bottom: 128px;
+    }
+}
+
+.shopping-items{
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 72px;
+    }
+    &__btn-box{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__btn{
+        background-color: transparent;
+        border: 1px solid #A4A4A4;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        padding: 17px 40px;
+        transition: 0.3s;
+        text-transform: uppercase;
+        &:hover{
+            cursor: pointer;
+            color:  #fff;
+            border: 1px solid transparent;
+            background-color: $main-color;
+        }
+    }
+}
+
+
+.shopping-item{
+    &__item-box{
+        height: 306px;
+        display: flex;
+        width: 652px;
+        box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13));
+    }
+    &__img{
+        height: 100%;
+    }
+    &__item-info{
+        margin-top: 22px;
+        margin-left: 30px;
+    }
+    &__name{
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+        margin-bottom: 42px;
+    }
+    &__key, &__value{
+        font-size: 22px;
+        line-height: 26px;
+        color: #575757;
+        margin-bottom: 10px;
+    }
+    &__price-value{
+        font-size: 22px;
+        line-height: 26px;
+        color: #EF5B70;
+    }
+    &__quantity-value{
+        border: 1px solid #EAEAEA;
+        font-size: 18px;
+        line-height: 22px;
+        color: #656565;
+        padding: 0 12px;
+        margin-left: 40px;
+    }
+    &__close-btn{
+        background-color: transparent;
+        border: none; 
+        margin-left: auto;
+        margin-right: 22px;
+        margin-top: 22px;
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+            &:hover .shopping-item__close-btn-fa{
+                color: $main-color;
+            }
+    }
+    &__close-btn-fa{
+        font-size: 22px;
+        color: #6F6E6E;
+    }
+}
+
+.shopping-check{
+    &__form{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        margin-bottom: 23px;
+    }
+
+    &__input{
+        width: 360px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        outline: none;
+        border: 1px solid #A4A4A4;
+        padding: 13px 17px 16px 17px;
+        transition: 0.4s;
+        text-transform: uppercase;
+        &::placeholder{
+            color: #B1B1B1;
+        }
+        &:hover{
+            background-color: #f1f1f1;
+        }
+    }
+    &__quote-btn{
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+        padding: 10px 15px;
+        border: 1px solid #A4A4A4;
+        background-color: transparent;
+        transition: 0.3s;
+        margin-bottom: 57px;
+        &:hover{
+            border: 1px solid transparent;
+            background-color: $main-color;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    &__total{
+        background: #F5F3F3;
+        padding: 37px 42px;
+        text-align: end;
+    }
+    &__subtotal{
+        font-family: Lato;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+        margin-bottom: 12px;
+        &-value{
+            margin-left: 24px;
+        }
+    }
+    &__grandtotal{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        margin-bottom: 21px;
+        &-value{
+            font-weight: bold;
+            color: #F16D7F;
+            margin-left: 24px;
+        }
+    }
+    &__hr{
+        border-width: 1px;
+        border-style: unset;
+        line-height: 1px;
+        height: 1px;
+        background-color: #E2E2E2;
+        margin-bottom: 17px;
+    }
+    &__btn{
+        width: 100%;
+        border: 1px solid transparent;
+        background-color: $main-color;
+        color: #fff;
+        padding: 15px 41px;
+        transition: 0.3s;
+        &:hover{
+            cursor: pointer;
+            background-color: transparent;
+            color: $main-color;
+            border: 1px solid $main-color;
+        }
+    }
+}
+
+@media (max-width:1200px) {
+
+    .shopping-items{
+        &__btn-box{
+            justify-content: center;
+            gap: 48px;
+        }
+
+        &__list{
+            align-items: center;
+        }
+    }
+
+    .shopping-cart{
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .shopping-check{
+        display: flex;
+        align-items:flex-start;
+        gap: 15px;
+        &__total{
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width:767px) {
+
+    .shopping-cart{
+        &_wrap{
+            margin-bottom: 96px;
+        }
+    }
+
+    .shopping-items{
+
+        &__list{
+            gap: 32px;
+            margin-bottom: 30px;
+        }
+
+        &__btn-box{
+            justify-content: center;
+            gap: 9px;
+        }
+
+        &__btn{
+            padding: 9px 32px;
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: lowercase;
+        }
+        &_btn-upper{
+            text-transform: capitalize;
+        }
+    }
+
+    .shopping-item{
+        &__item-box{
+            height: 188px;
+            width: 358px;
+        }
+
+        &__item-info{
+            margin-top: 13px;
+            margin-left: 17px;
+        }
+
+        &__name{
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 25px;
+        }
+
+        &__key, &__value{
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 4px;
+        }
+
+        &__price-value{
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &__quantity-value{
+      
+            font-size: 10px;
+            line-height: 12px;
+     
+            padding: 0 9px;
+            margin-left: 24px;
+        }
+
+        &__close-btn{
+            margin-right: 14px;
+            margin-top: 14px;
+            width: 14px;
+            height: 14px;
+        }
+        &__close-btn-fa{
+            font-size: 14px;
+        }
+    }
+
+    .shopping-check{
+        flex-direction: column;
+        gap: 48px;
+
+        &__quote-btn{
+            margin-bottom: 0;
+        }
+
+        &__total{
+            margin-top: 0;
+            width: 100%;
+        }
+    }
+        &_btn-upper{
+            text-transform: capitalize;
+        }
+    }
+
+  
+
