@@ -59,6 +59,7 @@
     background-image: url(../img/ACCESORIES_.png);
     width: 100%;
     height: 180px;
+    background-size: cover;
 }
 
 .category-title{
@@ -78,4 +79,49 @@
     line-height: 29px;
     text-align: center;
     color: $main-color;
+}
+
+@media (max-width:1200px) {
+
+    .categories{
+        padding-top: 20px;
+        padding-bottom: 154px;
+    }
+
+    .categories-list{
+        gap: 18px;
+    }
+
+    .category{
+        width: 232px;
+        height: 167px;
+    }
+
+    .category-list-item:nth-child(4) .category, .category-list-item:nth-child(4) {
+        height: 116px;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .categories{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .categories-list{
+        gap: 32px;
+        justify-content:  center;
+    }
+
+    .category{
+        width: 343px;
+        height: 249px;
+    }
+
+    .category-list-item:nth-child(4) .category, .category-list-item:nth-child(4) {
+    height: 111px;
+    }
+
 }

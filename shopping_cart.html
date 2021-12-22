@@ -192,9 +192,7 @@
                             </p>
                             <p class="shopping-item__key">
                                 Quantity: 
-                                <span class="shopping-item__quantity-value">
-                                    2
-                                </span>
+                                <input type="number" class="shopping-item__quantity-value" value="2" min="1">
                             </p>
                         </div>
                         
@@ -231,9 +229,7 @@
                             </p>
                             <p class="shopping-item__key">
                                 Quantity: 
-                                <span class="shopping-item__quantity-value">
-                                    2
-                                </span>
+                                <input type="number" class="shopping-item__quantity-value" value="2" min="1">
                             </p>
                         </div>
                         
@@ -244,20 +240,22 @@
                 </li>
             </ul>
             <div class="shopping-items__btn-box">
-                <button class="shopping-items__btn">CLEAR SHOPPING CART</button>
-                <button class="shopping-items__btn">CONTINUE SHOPPING</button>
+                <button class="shopping-items__btn"> <span class="shopping-items_btn-upper">Clear</span> shopping cart</button>
+                <button class="shopping-items__btn"> <span class="shopping-items_btn-upper">Continue</span> shopping</button>
 
             </div>
            
         </div>
        <div class="shopping-check">
-            <form action="#" class="shopping-check__form">
-                <label class="shopping-check__title">SHIPPING ADRESS</label>
-                <input type="text" class="shopping-check__input" placeholder="Bangladesh" required>
-                <input type="text" class="shopping-check__input" placeholder="State" required>
-                <input type="text" class="shopping-check__input" placeholder="Postcode / Zip" required>
-            </form>
-            <button class="shopping-check__quote-btn">GET A QUOTE</button>
+            <div class="shopping-check_form-wrap">
+                <form action="#" class="shopping-check__form">
+                    <label class="shopping-check__title">SHIPPING ADRESS</label>
+                    <input type="text" class="shopping-check__input" placeholder="Bangladesh" required>
+                    <input type="text" class="shopping-check__input" placeholder="State" required>
+                    <input type="text" class="shopping-check__input" placeholder="Postcode / Zip" required>
+                </form>
+                <button class="shopping-check__quote-btn"> <span class="shopping-check_btn-upper">Get</span> a quote</button>
+            </div>
             <div class="shopping-check__total">
                 <p class="shopping-check__subtotal">
                     SUB TOTAL

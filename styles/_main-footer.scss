@@ -10,7 +10,7 @@
 }
 
 .quote-block{
- width: 360px;
+ width: 356px;
  padding-top: 96px;
  padding-bottom: 126px;
 }
@@ -38,7 +38,6 @@
     text-align: center;
     padding-top: 140px;
     margin-right: 98px;
-
 }
 
 .main-footer-feedback-title{
@@ -92,7 +91,6 @@
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
     transition-duration: 0.5s;
-    
     &:hover{
         cursor: pointer;
         background-color: #E05C6E;
@@ -136,4 +134,61 @@
 
 .bcg-social-icon{
     fill: white;
+}
+
+@media (max-width:1200px) {
+
+    .main-footer-wrap{
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .quote-block{
+        padding-top: 64px;
+        padding-bottom: 0px;
+    }
+
+    .main-footer-feedback{
+        padding-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 220px;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .main-footer-wrap{
+        gap: 60px;
+    }
+
+    .main-footer-feedback{
+        margin-bottom: 110px;
+    }
+
+    .quote-text{
+        font-size: 18px;
+    }
+
+    .main-footer-feedback-mini-title{
+        font-size: 14px;
+    }
+    .main-footer-feedback-input{
+        width: 236px;
+    } 
+    
+
+    .foooter-bottom-wrap{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .foooter-bottom{
+        padding-bottom: 9px;
+        padding-top: 43px;
+    }
+
+
 }

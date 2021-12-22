@@ -19,38 +19,39 @@
         display: flex;
         align-items: center;
         background-color: #F7F7F7;
-        justify-content: space-between;
+        position: relative;
+        z-index: -1;
     }
     &__left-arrow {
         @include silder__arrow_mix;
+        position: absolute;
     }
     &__img {
         height: 90%;
+        margin: 0 auto;
     }
     &__right-arrow {
         @include silder__arrow_mix;
+        position: absolute;
+        right: 0;
     }
     &__descrtipion{
         padding-top: 1px;
         min-height: 600px;
         text-align: center;
-        width: 1140px;
+        max-width: 1140px;
         background-color: #fff;
         border: 1px solid #EAEAEA;
         display: flex;
         flex-direction: column;
         &_wrap{
             margin: -64px auto 0 auto;
-        
         }
     }
     &__main-title{
         margin-top: 64px;
         margin-bottom: 27px;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
-        color: $main-color;
+
         position: relative;
         &:after{
             position: absolute;
@@ -62,6 +63,12 @@
             bottom: 0;
             margin-bottom: -12px;
             transform: translateX(-50%);
+        }
+        &-text{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: $main-color;
         }
     }
     &__subtitle{
@@ -77,7 +84,7 @@
         font-size: 14px;
         line-height: 17px;
         color: #5E5E5E;
-        width: 555px;
+        max-width: 555px;
         margin: 0 auto 32px auto;
     }
     &__price{
@@ -124,3 +131,49 @@
         margin-bottom: 128px;
     }
 }
+
+@media (max-width:1200px) {
+
+    .slider{
+
+        &__slideshow{
+            height: 624px;
+        }
+
+        &__img {
+            height: initial;
+            max-height: 450px;
+        }
+        &__descrtipion{
+            &_wrap{
+                margin: 0 auto;
+            
+            }
+        }   
+    }   
+
+}
+
+@media (max-width:767px) {
+
+
+    .slider{
+
+        &__subtitle{
+            margin-bottom: 32px;
+        }
+
+        &__hr{
+            width: 174px;
+        }
+        &__text{
+            max-width: 326px;
+        }
+
+        &_wrap{
+            margin-bottom: 64px;
+        }
+    }   
+
+}
+

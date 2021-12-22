@@ -12,6 +12,7 @@
     background: transparent;
     margin-right: 28px;
 }
+
 .param-block__fa{
     margin-left: 10px;
 }
@@ -66,4 +67,36 @@
 .param-block_product-wrap{
     align-self: center;
     margin-bottom: 48px;
+}
+
+
+
+@media (max-width:1200px) {
+
+    .param-block_btn_wrap:nth-child(3) .param-block__btn{
+        margin-right: 0;
+    }
+ 
+    .param-block__menu{
+        right: 0px;
+    }   
+}
+
+@media (max-width:767px) {
+
+    .param-block__btn{
+        font-size: 12px;
+        line-height: 14px;
+        margin-right: 24px;
+    }
+
+    .products-choice-menu{
+        justify-content: flex-end;
+    }
+
+    .param-block__menu{
+        max-width: 115px;
+
+    }
+    
 }

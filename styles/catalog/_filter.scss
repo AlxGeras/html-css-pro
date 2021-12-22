@@ -2,14 +2,15 @@
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: flex-end;
+    
+    
     &__svg{
         margin-left: 11px;
     }
     &__details{
         position: absolute;
-        background-color: #fff;
-        width: 360px;
+        background-color: transparent;
+        width: 110px;
         padding: 17px;
         display: flex;
     
@@ -17,6 +18,9 @@
             color:  #EF5B70;
             fill: #EF5B70;
             box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            background-color: #FFFFFF;
+            width: 360px;
+
         }
     
         &[open] .filter__btn{
@@ -27,6 +31,7 @@
         display: flex;
         align-items: center;
         padding-bottom: 16px;
+        cursor: pointer;
     }
     &__summary-inner{
         display: flex;
@@ -90,5 +95,27 @@
         }
     }
 
+}
+
+@media (max-width:767px) {
+
+    .filter{
+
+        &__details{
+            width: 50px;
+            &[open]{
+                width: 343px;
+            }
+        }
+
+        &__svg{
+            transform: scale(2.5);
+            margin-left: 0;
+        }
+
+        &__summary-title{
+            display: none;
+        }
+    }
 }
 

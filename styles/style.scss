@@ -60,6 +60,7 @@ button, input{
     background-repeat: no-repeat;
     height: 764px;
     background-size: contain;
+    background-position: left bottom;
 }
 
 .main-title{
@@ -169,6 +170,7 @@ button, input{
     padding-top: 33px;
     padding-bottom: 50px;
     justify-content: space-between;
+    position: relative;
 }
 
 .products-choice-menu-wrap{
@@ -214,8 +216,8 @@ button, input{
     }
 }
 
-
 /*END CATALOG PAGE*/
+
 
 /*START PRODUCT PAGE*/
 
@@ -223,14 +225,115 @@ button, input{
 
 /*END PRODUCT PAGE*/
 
+
 /*START REGISTRAION PAGE*/
 
 @import "_registration.scss";
 
 /*END REGISTRAION PAGE*/
 
+
 /*START SHOPPING CART PAGE*/
 
-@import "shopping-cart/_shopping-cart";
+@import "shopping-cart/_shopping-cart.scss";
 
 /*END SHOPPING CART PAGE*/
+
+/*START TABLET VERSION*/
+
+@media (max-width:1200px) {
+    .wrap{
+        max-width: 737px;
+    }
+    .offer-wrap{
+        height: 368px;
+
+    }
+
+    .main-title{
+        margin-top: 138px;
+        margin-right: 0px;
+    }
+
+    .main-title-first-part{
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .main-title-second-part, .main-title-last-part{
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .products-choice-menu-wrap:nth-child(2){
+        align-self: flex-end;
+
+    }
+
+    .products-choice-menu-wrap:last-child{
+        display: none;
+    }
+}   
+
+
+/*END TABLET PAGE*/
+
+
+/*START MOBILE VERSION*/
+
+@media (max-width:767px) {
+    .wrap{
+        max-width: 343px;
+
+    }
+
+    .offer-wrap{
+        background-image: none;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        
+    }
+
+    .main-title-first-part{
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .main-title-second-part, .main-title-last-part{
+        font-size: 20px;
+        line-height: 24px
+    }
+
+    .nav-info-block-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 32px;
+    }
+
+    .products-choice-menu-wrap:first-child{
+        width: initial;
+        position: absolute;
+        left: 0;
+        transform: translateX(100%);
+        top: 47px;
+        z-index: 4;
+   
+    }
+
+    .products-choice-menu-wrap:nth-child(2){
+        width: initial;
+        z-index: 3;
+
+    }
+
+    .catalog-pagination-list{
+        margin-top: 40px;
+        margin-bottom: 64px;
+    }
+}   
+
+
+/*END MOBILE PAGE*/
+
