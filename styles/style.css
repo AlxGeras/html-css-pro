@@ -1074,7 +1074,7 @@ button, input {
 .filter__details {
   position: absolute;
   background-color: transparent;
-  width: 360px;
+  width: 110px;
   padding: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1087,6 +1087,7 @@ button, input {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   background-color: #FFFFFF;
+  width: 360px;
 }
 
 .filter__details[open] .filter__btn {
@@ -1102,6 +1103,7 @@ button, input {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 16px;
+  cursor: pointer;
 }
 
 .filter__summary-inner {
@@ -1880,11 +1882,13 @@ button, input {
 }
 
 .shopping-item__quantity-value {
+  padding-left: 12px;
+  text-align: center;
   border: 1px solid #EAEAEA;
   font-size: 18px;
   line-height: 22px;
   color: #656565;
-  padding: 0 12px;
+  width: 50px;
   margin-left: 40px;
 }
 
@@ -2110,9 +2114,10 @@ button, input {
     line-height: 17px;
   }
   .shopping-item__quantity-value {
+    width: 36px;
     font-size: 10px;
     line-height: 12px;
-    padding: 0 9px;
+    padding-left: 10px;
     margin-left: 24px;
   }
   .shopping-item__close-btn {
