@@ -43,10 +43,14 @@
 
 .shopping-item{
     &__item-box{
+        transition: 0.5s;
         height: 306px;
         display: flex;
         width: 652px;
         box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13));
+        &:hover{
+            transform: scale(1.1);
+        }
     }
     &__img{
         height: 100%;
@@ -79,7 +83,7 @@
         font-size: 18px;
         line-height: 22px;
         color: #656565;
-        width: 50px;
+        width: 60px;
         margin-left: 40px;
     }
     &__close-btn{
@@ -282,10 +286,10 @@
         }
 
         &__quantity-value{
-            width: 36px;
+            width: 45px;
             font-size: 10px;
             line-height: 12px;
-            padding-left: 10px;
+            padding-left: 12px;
             margin-left: 24px;
         }
 

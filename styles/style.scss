@@ -50,46 +50,7 @@ button, input{
 
 @import '_main-header.scss';
 
-.offer{
-    background-color: #F1E4E6;
-}
-
-.offer-wrap{
-    padding: 1px;
-    background-image: url(../img/offer.png);
-    background-repeat: no-repeat;
-    height: 764px;
-    background-size: contain;
-    background-position: left bottom;
-}
-
-.main-title{
-    border-left: 12px solid $main-color;
-    margin-top: 290px;
-    float: right;
-    margin-right: 98px;
-    padding-left: 16px;
-}
-.main-title-first-part{
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 58px;
-    color: #222222
-}
-
-.main-title-second-part{
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
-    color: #222222;
-}
-
-.main-title-last-part{
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
-    color: $main-color;
-}
+@import "index/_offer";
 
 @import "index/_product-section";
 
@@ -99,122 +60,16 @@ button, input{
 
 @import "_main-footer";
 
+@import "_nav_info";
+
 
 /*START CATALOG PAGE*/
-
-.nav-info-block{
-    height: 148px;
-    background-color: #F8F3F4;
-    display: flex;
-    align-items: center;
-}
-
-.nav-info-block-wrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.nav-info-block-title{
-    font-size: 24px;
-    line-height: 29px;
-    color: $main-color;
-    font-weight: normal;
-}
-
-.breadcrumbs-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 5px;
-}
-
-.breadcrumbs-item::before {
-  content: '/';
-  margin-right: 5px;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #636363;
-  transition: 0.2s;
-}
-
-.breadcrumbs-item:first-child::before {
-  display: none;
-}
-
-.breadcrumbs-link {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #636363;
-  transition-duration: 0.3s;
-}
-
-.breadcrumbs-link--current {
-  font-weight: bold;
-  color: $main-color;
-}
-
-.breadcrumbs-link[href]:hover {
-  text-decoration: underline;
-  color: $main-color;
-}
-
-.products-choice-menu{
-    display: flex;
-    padding-top: 33px;
-    padding-bottom: 50px;
-    justify-content: space-between;
-    position: relative;
-}
-
-.products-choice-menu-wrap{
-    width: $product_card_width;
-}
-
-.product-catalog_wrap{
-    flex-grow: 1;
-}
 
 @import "catalog/_filter.scss";
 
 @import "catalog/_param-block.scss";
 
-.catalog-pagination-list{
-    display: flex;
-    list-style-type: none;
-    align-self: center;
-    margin-top: 48px;
-    margin-bottom: 96px;
-    border: 1px solid #EBEBEB;
-    color: #C4C4C4;
-}
-
-.catalog-pagination-link{
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: inherit;
-}
-
-.catalog-pagination-current-link{
-    color: $main-color;
-}
-
-.catalog-pagination-list-item{
-
-    padding: 12px 10px;
-    transition-duration: 0.3s;
-    &:hover{
-        color: #EF5B70;
-    }
-}
+@import "catalog/_catalog.scss";
 
 /*END CATALOG PAGE*/
 
@@ -245,36 +100,7 @@ button, input{
     .wrap{
         max-width: 737px;
     }
-    .offer-wrap{
-        height: 368px;
-
-    }
-
-    .main-title{
-        margin-top: 138px;
-        margin-right: 0px;
-    }
-
-    .main-title-first-part{
-        font-size: 44px;
-        line-height: 53px;
-    }
-
-    .main-title-second-part, .main-title-last-part{
-        font-size: 24px;
-        line-height: 29px;
-    }
-
-    .products-choice-menu-wrap:nth-child(2){
-        align-self: flex-end;
-
-    }
-
-    .products-choice-menu-wrap:last-child{
-        display: none;
-    }
 }   
-
 
 /*END TABLET PAGE*/
 
@@ -284,56 +110,8 @@ button, input{
 @media (max-width:767px) {
     .wrap{
         max-width: 343px;
-
-    }
-
-    .offer-wrap{
-        background-image: none;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        
-    }
-
-    .main-title-first-part{
-        font-size: 38px;
-        line-height: 46px;
-    }
-
-    .main-title-second-part, .main-title-last-part{
-        font-size: 20px;
-        line-height: 24px
-    }
-
-    .nav-info-block-wrap{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        gap: 32px;
-    }
-
-    .products-choice-menu-wrap:first-child{
-        width: initial;
-        position: absolute;
-        left: 0;
-        transform: translateX(100%);
-        top: 47px;
-        z-index: 4;
-   
-    }
-
-    .products-choice-menu-wrap:nth-child(2){
-        width: initial;
-        z-index: 3;
-
-    }
-
-    .catalog-pagination-list{
-        margin-top: 40px;
-        margin-bottom: 64px;
     }
 }   
-
 
 /*END MOBILE PAGE*/
 
