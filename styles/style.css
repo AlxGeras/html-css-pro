@@ -855,6 +855,7 @@ button, input {
   border-top-left-radius: 50px;
   width: 256px;
   padding-left: 22px;
+  padding-right: 22px;
   font-size: 14px;
   line-height: 17px;
   opacity: 0.67;
