@@ -66,6 +66,10 @@
 
 @media (max-width:767px) {
 
+    .products-choice-menu{
+        justify-content: flex-end;
+    }
+
     .products-choice-menu-wrap:first-child{
         width: initial;
         position: absolute;

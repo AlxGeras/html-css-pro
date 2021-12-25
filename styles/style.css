@@ -1390,11 +1390,6 @@ button, input {
     line-height: 14px;
     margin-right: 24px;
   }
-  .products-choice-menu {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
   .dropdownlist__menu {
     max-width: 115px;
   }
@@ -1471,6 +1466,11 @@ button, input {
 /*END TABLET PAGE*/
 /*START MOBILE VERSION*/
 @media (max-width: 767px) {
+  .products-choice-menu {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
   .products-choice-menu-wrap:first-child {
     width: initial;
     position: absolute;
@@ -2278,7 +2278,7 @@ button, input {
     margin-top: 0;
     width: 100%;
   }
-  _btn-upper {
+  .shopping-check_btn-upper {
     text-transform: capitalize;
   }
 }
