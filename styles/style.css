@@ -1910,6 +1910,9 @@ button, input {
             flex-direction: column;
     gap: 40px;
   }
+  .reg-feedback__input {
+    width: 343px;
+  }
 }
 
 /*END REGISTRAION PAGE*/
@@ -2232,7 +2235,11 @@ button, input {
   }
   .shopping-item__item-box {
     height: 188px;
-    width: 358px;
+    width: 343px;
+  }
+  .shopping-item__item-box:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   .shopping-item__item-info {
     margin-top: 13px;
@@ -2284,6 +2291,9 @@ button, input {
   }
   .shopping-check_btn-upper {
     text-transform: capitalize;
+  }
+  .shopping-check__input {
+    width: 343px;
   }
 }
 

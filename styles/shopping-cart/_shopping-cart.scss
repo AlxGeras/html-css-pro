@@ -260,7 +260,10 @@
     .shopping-item{
         &__item-box{
             height: 188px;
-            width: 358px;
+            width: 343px;
+            &:hover{
+                transform: scale(1.03);
+            }
         }
 
         &__item-info{
@@ -318,6 +321,10 @@
         }
         &_btn-upper{
             text-transform: capitalize;
+        }
+
+        &__input{
+            width: 343px;
         }
     }
         
