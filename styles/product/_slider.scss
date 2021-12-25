@@ -159,6 +159,10 @@
 
     .slider{
 
+        &__img {
+            max-width: 343px;
+        }
+
         &__subtitle{
             margin-bottom: 32px;
         }

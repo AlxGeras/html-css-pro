@@ -23,7 +23,7 @@
     &__form{
         display: flex;
         flex-direction: column;
-        width: 360px;
+
         &__label{
             font-weight: 300;
             font-size: 16px;
@@ -61,7 +61,7 @@
     &__radio-box{
         margin-top: 10px;
         margin-bottom: 32px;
-        width: 360px;
+        max-width: 360px;
         display: flex;
     }
 
