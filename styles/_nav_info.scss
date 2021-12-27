@@ -77,6 +77,25 @@
 }
 
 
+/*START TABLET VERSION*/
+
+@media (max-width: 1200px) {
+
+
+
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(400px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}   
+
+
    
 
 /*START MOBILE VERSION*/

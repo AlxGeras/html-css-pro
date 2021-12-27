@@ -1117,6 +1117,34 @@ button, input {
   color: #F16D7F;
 }
 
+/*START TABLET VERSION*/
+@media (max-width: 1200px) {
+  @-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(400px);
+              transform: translateX(400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(400px);
+              transform: translateX(400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
 /*START MOBILE VERSION*/
 @media (max-width: 767px) {
   .nav-info-block-wrap {
